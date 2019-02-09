@@ -423,7 +423,7 @@ th {
 }
 
 html {
-  background-color: white;
+  background-color: whitesmoke;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -17411,6 +17411,14 @@ label.panel-block:hover {
 .upload .upload-draggable.is-hovered.is-danger {
   border-color: #e3342f;
   background: rgba(227, 52, 47, 0.05);
+}
+
+.is-muted {
+  color: #b5b5b5 !important;
+}
+
+a.is-muted:hover {
+  color: grey !important;
 }
 
 .dropdown {

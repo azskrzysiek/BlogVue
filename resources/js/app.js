@@ -14,10 +14,14 @@ $(document).ready(function(){
 });
 
 window.Vue = require('vue');
+import Vue from 'vue';
 
-import Buefy from 'buefy'
+
+import Buefy from 'buefy';
 
 Vue.use(Buefy);
+
+Vue.component(Buefy.Checkbox.name, Buefy.Checkbox);
 
 var app = Vue({
     el: '#app',

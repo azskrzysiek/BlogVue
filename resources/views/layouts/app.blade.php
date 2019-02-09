@@ -32,9 +32,9 @@
                 <a href="" class="navbar-item is-tab is-hidden-mobile">Share</a> 
                 </div>
                 <div class="navbar-end" style="overflow: visible;">
-                    @if(!Auth::guest())
-                        <a href="#" class="navbar-item is-tab">Login</a>
-                        <a href="#" class="navbar-item is-tab">Join Our Community</a>
+                    @if(Auth::guest())
+                        <a href="{{route('login')}}" class="navbar-item is-tab">Login</a>
+                        <a href="{{route('register')}}" class="navbar-item is-tab">Join Our Community</a>
                     @else
                         <button class="dropdown is-aligned-right navbar-item is-tab">
                             Hey Alex <span class="icon"><i class="fa fa-caret-down"></i></span>
@@ -56,5 +56,7 @@
         </main>
     </div>
 
-    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    @yield('scripts')
 </html>
