@@ -7,11 +7,31 @@
 
 require('./bootstrap');
 
+$(document).ready(function(){
+    $('button.dropdown').hover(function(e){
+        $(this).toggleClass('is-open');
+    });
+});
+
 window.Vue = require('vue');
 
 import Buefy from 'buefy'
 
 Vue.use(Buefy);
+
+var app = Vue({
+    el: '#app',
+    data: {}
+});
+
+
+
+
+// $(document).ready(function(){
+// 	$("button").hover(function(){
+// 		$(this).addClass("Mydivadd");
+// 	});
+// });
 
 /**
  * The following block of code may be used to automatically register your
