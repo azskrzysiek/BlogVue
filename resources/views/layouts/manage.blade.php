@@ -20,7 +20,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+
     @include('includes.nav.main')
+
+    @include('includes.nav.manage')
+
     <div id="app">
         <main class="py-4">
             @yield('content')
