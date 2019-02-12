@@ -25,8 +25,8 @@
 
     @include('includes.nav.manage')
 
-    <div id="app">
-        <main class="py-4">
+    <div class="management-area flex-container" id="app">
+        <main>
             @yield('content')
         </main>
     </div>
